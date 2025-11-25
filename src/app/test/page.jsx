@@ -241,7 +241,9 @@ export default function TestPage() {
           <TopControls />
         </div>
         <section className={s.welcomeSection}>
-          <h1 className={s.title}>Узнай, какой ты аналитик</h1>
+          <h1 className={s.title}>
+            Узнайте, какое тотемное животное подходит вам как аналитику!
+          </h1>
           <button className={s.startButton} onClick={() => setStarted(true)}>
             Начать тест
           </button>
