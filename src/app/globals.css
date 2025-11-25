@@ -1,42 +1,175 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Yandex Sans Fonts */
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-Thin.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-Thin.woff") format("woff"),
+    url("/assets/font/YandexSansText-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-Light.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-Light.woff") format("woff"),
+    url("/assets/font/YandexSansText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-Regular.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-Regular.woff") format("woff"),
+    url("/assets/font/YandexSansText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-Medium.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-Medium.woff") format("woff"),
+    url("/assets/font/YandexSansText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-Bold.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-Bold.woff") format("woff"),
+    url("/assets/font/YandexSansText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("/assets/font/YandexSansText-RegularItalic.woff2") format("woff2"),
+    url("/assets/font/YandexSansText-RegularItalic.woff") format("woff"),
+    url("/assets/font/YandexSansText-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("/assets/font/YandexSansDisplay-Thin.woff2") format("woff2"),
+    url("/assets/font/YandexSansDisplay-Thin.woff") format("woff"),
+    url("/assets/font/YandexSansDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("/assets/font/YandexSansDisplay-Light.woff2") format("woff2"),
+    url("/assets/font/YandexSansDisplay-Light.woff") format("woff"),
+    url("/assets/font/YandexSansDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("/assets/font/YandexSansDisplay-Regular.woff2") format("woff2"),
+    url("/assets/font/YandexSansDisplay-Regular.woff") format("woff"),
+    url("/assets/font/YandexSansDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("/assets/font/YandexSansDisplay-Bold.woff2") format("woff2"),
+    url("/assets/font/YandexSansDisplay-Bold.woff") format("woff"),
+    url("/assets/font/YandexSansDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("/assets/font/YandexSansDisplay-RegularItalic.woff2") format("woff2"),
+    url("/assets/font/YandexSansDisplay-RegularItalic.woff") format("woff"),
+    url("/assets/font/YandexSansDisplay-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Yandex Sans Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #ffffff;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Simple centered spinner */
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #00c8ff;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }

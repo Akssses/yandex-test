@@ -1,0 +1,54 @@
+.topControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  background: rgba(111, 111, 111, 0.537);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: white;
+  font-family: "Yandex Sans Text", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  svg {
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background: rgba(111, 111, 111, 0.7);
+  }
+
+  // Стили для кнопки Back
+  &.backButton {
+    background: rgba(111, 111, 111, 0.537);
+  }
+}
+
+.rightControls {
+  display: flex;
+  gap: 8px;
+
+  button {
+    background: rgba(111, 111, 111, 0.537);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
