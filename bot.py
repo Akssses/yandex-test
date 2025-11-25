@@ -3,7 +3,7 @@ import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = "8379243111:AAGAJjaEQf3VcyaeuuEbqJ7qLL6SGLuNxWc"
+BOT_TOKEN = "8418694131:AAGN3lPJdLK6ve8w8i0Qq7XrKqx8GZTDwk8"
 TEST_URL = "https://metamarketing.muza.team/test"
 
 
