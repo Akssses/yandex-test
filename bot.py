@@ -1,6 +1,6 @@
 import logging
 
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, WebAppInfo
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 BOT_TOKEN = "8418694131:AAGN3lPJdLK6ve8w8i0Qq7XrKqx8GZTDwk8"
@@ -10,7 +10,7 @@ TEST_URL = "https://metamarketing.muza.team/test"
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send the test invitation with a button."""
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text="Открыть тест", url=TEST_URL)]]
+        [[InlineKeyboardButton(text="Открыть тест", web_app=WebAppInfo(TEST_URL))]]
     )
     await update.message.reply_text(
         text="Откройте тест по кнопке ниже.", reply_markup=keyboard
